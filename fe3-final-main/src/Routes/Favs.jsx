@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "../Components/Card";
+import  '../Routes/favs.css';
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 

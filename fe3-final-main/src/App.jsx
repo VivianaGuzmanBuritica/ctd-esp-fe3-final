@@ -6,11 +6,15 @@ import Detail from "./Routes/Detail";
 import Home from "./Routes/Home";
 import Favs from "./Routes/Favs";
 import Contact from "./Routes/Contact";
+import { useContextGlobal } from "./Components/utils/global.context";
 
 
 function App() {
+const{themeState} = useContextGlobal()
+
   return (
-      <div className="App">
+      <div className="App"
+      style={{backgroundColor: themeState.bgColor, color: themeState.color}}>
         <Navbar/>  
         <Routes> 
           <Route path="/" element={<Home/>}/>

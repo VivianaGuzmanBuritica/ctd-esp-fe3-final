@@ -12,11 +12,14 @@ code {
     monospace;
 }
 .favButton{
-  background-color: rgba(136, 136, 136, 0.116);
+  background-color: rgb(136, 136, 136);;
   padding: 10px;
   border: none;
   width: 100%;
   cursor: pointer;
+  color: white;
+  margin-bottom: 10px;
+
 }
 
 h1{
@@ -26,12 +29,12 @@ h1{
 nav{
   display: flex;
   width: 80vw;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 1rem;
 }
 
 a{
-  color: #000;
+  color: gray;
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
@@ -81,7 +84,7 @@ form{
 }
 
 .card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+  border: 0.5px solid rgb(117, 118, 202);
 }
 
 .card-grid{
@@ -94,6 +97,14 @@ form{
   margin: 0 auto;
 }
 
+.theme{
+  height: 40px;
+
+}
+
+.theme:hover{
+  border: 0.5px solid rgb(117, 118, 202);
+}
 table {
  border-collapse: collapse;
     border-spacing: 0;
@@ -118,5 +129,5 @@ tr:nth-child(even) {
   color: white;
 }
 .dark > a {
-  color: white;
+  color: black;
 }
