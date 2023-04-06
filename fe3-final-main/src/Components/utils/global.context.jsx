@@ -17,11 +17,7 @@ export const ContextGlobal = createContext(undefined)
     fetchUser()
     }, [])
 
-    console.log("context");
-    console.log(userList);
-
-  //Aqui deberan implementar la logica propia del Context, utilizando el hook useMemo
-
+  
   return (
     <ContextGlobal.Provider value={{userList, setUserList}}>
       {children}

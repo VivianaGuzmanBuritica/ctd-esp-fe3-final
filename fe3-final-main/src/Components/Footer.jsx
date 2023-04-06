@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
         <p>Powered by Viviana Guzman Buritica</p>
-        <img src="./images/DH.png" alt='DH-logo' />
+        <img src="/images/DH.png" alt='DH-logo' />
     </footer>
   )
 }
