@@ -1,7 +1,5 @@
 import { createContext, useContext, useState, useEffect, useReducer } from "react";
 
-// export const initialState = {theme: "", data: []}
-
 export const ContextGlobal = createContext(undefined)
 
 const themes = {
@@ -30,7 +28,7 @@ const themeReducer = (state, action) => {
   }
 }
 
-  export const ContextProvider = ({ children }) => {
+export const ContextProvider = ({ children }) => {
 
   const [themeState, themeDispatch] = useReducer(themeReducer, intialThemeState)  
 
@@ -53,7 +51,5 @@ const themeReducer = (state, action) => {
     </ContextGlobal.Provider>
   )
 }
-
-
 
 export const useContextGlobal = () => useContext(ContextGlobal)
