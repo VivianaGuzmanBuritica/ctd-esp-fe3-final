@@ -28,11 +28,36 @@ h1{
 
 nav{
   display: flex;
-  width: 80vw;
+  /* width: 100vw; */
   justify-content: space-between;
   padding: 1rem;
+  background-color: #ccc;
 }
 
+.logoDh{
+  display: flex;
+  width: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoDh img{
+  margin-right: 10px;
+}
+.navLinks{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks button{
+  width: 40px;
+  margin-left: 10px;
+}
+
+.detail{
+  color:rgb(85, 82, 82);
+}
 a{
   color: gray;
   text-decoration: none;
@@ -50,9 +75,10 @@ footer {
   padding: 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
   height: 40px;
   margin-top: 2rem;
+  background-color:#ccc;
+  color:black
 }
 
 footer > img{

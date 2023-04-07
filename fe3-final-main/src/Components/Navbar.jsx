@@ -23,12 +23,17 @@ const Navbar = () => {
   return (
     <nav>
       {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
-      <Link to='/'><h3>Home</h3></Link>
-      <Link to='/favs'><h3>Favoritos</h3></Link>
-      <Link to='/contact'><h3>Contacto</h3></Link>
-      
-      {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-      <button onClick={switchTheme} className='theme'>{themeState.theme ? '☀️' : '🌘'}</button>
+      <div className='logoDh'>
+        <img src="../DH.ico" alt='DH-logo' width={40} height={40}/>
+        <h3>Odonto</h3>
+      </div>
+      <div className='navLinks'>
+        <Link to='/'><h4>Home</h4></Link>
+        <Link to='/favs'><h4>Favoritos</h4></Link>
+        <Link to='/contact'><h4>Contacto</h4></Link>
+        {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
+        <button onClick={switchTheme} className='theme'>{themeState.theme ? '☀️' : '🌘'}</button>
+      </div>
     </nav>
   )
 }
